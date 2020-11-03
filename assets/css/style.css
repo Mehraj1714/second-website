@@ -1,0 +1,167 @@
+:root{
+	--primaryColor:#8CC835;
+	--secondaryColor:#F2F2F2;
+	--textColor:#6F7261;
+	--headingColor:#FFFFFF;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: transparent;
+	-webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-stroke: 1px transparent;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+
+h1 {font-size: 50px; line-height: 85px; font-weight: 700;}
+h2 {font-size: 36px; line-height: 62px; font-weight: 600;}
+h3 {font-size: 32px; line-height: 55px; font-weight: 600;}
+h4 {font-size: 28px; line-height: 48px; font-weight: 600;}
+h5 {font-size: 26px; line-height: 45px; font-weight: 600;}
+h6 {font-size: 22px; line-height: 38px; font-weight: 600;}
+
+p, a {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+ul, a {	text-decoration: none;}
+
+.text-center {text-align: center;}
+.mt-100 {margin-top: 100px;}
+.mb-100 {margin-bottom: 100px;}
+.pt-50 {padding-top: 50px;}
+.pb-50 {padding-bottom: 50px;}
+
+button {
+	background-color: var(--primaryColor);
+	border:none;
+	border-radius: 10px;
+	font-weight: 600;
+	color: #FFFFFF;
+	padding: 10px;
+}
+
+
+button a{
+
+	font-weight: 600;
+	color: #FFFFFF;
+	
+}
+
+button:hover {
+	background-color: transparent;
+	border:2px solid #FFFFFF;
+	color: #FFFFFF;
+	transition: .3s;
+}
+
+button:hover a{
+	color: #FFFFFF;
+	transition: .3s;
+}
+
+img {
+	width: 100%;
+}
+
+/*heading
+-------------------------------------------------*/
+
+.head{
+	background-image: url(../img/human3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	color: var(--headingColor);
+	padding-top: 250px; 
+	background-attachment: fixed;
+}
+
+
+.overlay{
+	background-color: rgb(0,0,0,0.5);
+}
+
+/* navbar 
+-----------------------------------------------*/
+
+.bg-light{
+	background-color: var(--primaryColor)!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white!important;
+}
+
+.fas.fa-leaf{
+	color: white;
+	font-size: 36px;
+	background-color: var(--primaryColor);
+}
+
+/*about
+----------------------------------------*/
+
+#sub-title{
+	color: var(--primaryColor);
+}
+
+hr{
+	border-top: 1px solid var(--primaryColor);
+	width: 50%;
+	align-items: center;
+}
+
+/*what we do
+---------------------------------------------*/
+
+#work{
+	background-color: #DEE1E6;
+}
+
+#work>.container>h4{
+	color: var(--textColor);
+}
+
+i{
+	color: var(--primaryColor);
+	background-color: white;
+	padding: 20px;
+	font-size: 36px;
+	border-radius: 50%;
+	margin: 20px;
+}
+
+i:hover{
+	background-color: var(--primaryColor);
+	color: white;
+}
+
+.href{
+	padding: 30px;
+}
+
+/*team
+-------------------------------------*/
+
+.team-member{
+	margin: 
+}
+
+/*our work
+--------------------------------------------*/
+
+.header4{
+	color: var(--textColor);
+}
