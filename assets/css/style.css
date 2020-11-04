@@ -165,3 +165,36 @@ i:hover{
 .header4{
 	color: var(--textColor);
 }
+
+.btn{
+	background-color: var(--primaryColor);
+	color: white;
+}
+
+.btn:hover{
+	background-color: var(--secondaryColor);
+	color: var(--primaryColor);
+}
+
+.grid-item {
+	width: 30%;
+	margin-right: 10px;
+	border:5px solid var(--primaryColor);	
+	margin-bottom: 10px;
+	height: auto;
+	border-radius: 20px;
+}
+
+.grid-item>img{
+	border-radius: 20px;
+}
+
+/*footer
+------------------------------------------------*/
+
+footer{
+	background-color: var(--secondaryColor);
+	color: var(--textColor);
+}
+
+
