@@ -11,9 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!--responsive css-->
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-  <!--fontawesome-->
+  <!--fontawesome js-->
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
+  
 </head>
 <body>
 
@@ -160,14 +160,67 @@
     <h5>We have done</h5><hr>
     <h4 class="header4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
     </h4>
+    <div class="container pt-50">
+      <div class="filter text-center pb-50">
+
+        <button data-name="*" class="btn">All</button>
+        <button data-name=".website" class="btn">Websites</button>
+        <button data-name=".graphics" class="btn">Graphics</button>
+        <button data-name=".digital-marketing" class="btn">Digital-marketing</button>
+      </div>
+      <div class="grid">
+         <div class="grid-item website">
+           <img src="assets/img/website1.jpg">
+         </div>
+        <div class="grid-item graphics">
+          <img src="assets/img/graphics1.jpg">
+        </div>
+        <div class="grid-item website">
+           <img src="assets/img/website2.jpg">
+        </div>
+        
+        <div class="grid-item digital-marketing">
+           <img src="assets/img/dm1.jpg">
+        </div>
+        <div class="grid-item graphics">
+           <img src="assets/img/graphics2.jpg">
+        </div>  
+        
+        <div class="grid-item graphics">
+            <img src="assets/img/dm4.jpg">          
+        </div>
+        <div class="grid-item website">
+           <img src="assets/img/website3.jpg">
+        </div>
+        <div class="grid-item digital-marketing">
+          <img src="assets/img/dm2.jpg">
+        </div> 
+        <div class="grid-item digital-marketing">
+          <img src="assets/img/dm3.jpg">
+        </div>
+        
+      </div>
+      
+    </div>
 
   </div>
 
 </div>
 
-
-
 <!--our work end-->
+
+<!--footer-->
+<footer class="text-center mt-100 pt-50">
+  <h5>Conatct Us</h5><br>
+  <i class='fab fa-facebook'></i>
+  <i class='fab fa-twitter'></i>
+  <i class='fab fa-google'></i>
+
+
+  
+</footer>
+
+<!--footer end-->
 
 
 
@@ -175,6 +228,26 @@
 <script src="lib/jquery-3.5.1.min.js"></script>
 <!--bootstrap js-->
 <script src="lib/bootstrap.min.js"></script>
+<!-- isotope js -->
+<script src="lib/isotope.pkgd.min.js"></script>
+
+<!-- Isotope js custom -->
+<script>
+  var $grid = $('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});  
+
+  $('.filter button').on("click", function(){
+    var value = $(this).attr('data-name');
+
+    $grid.isotope({
+      filter: value
+    });
+      });
+
+</script>
 
 
 </body>
