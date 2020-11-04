@@ -193,7 +193,7 @@ i:hover{
 ------------------------------------------------*/
 
 footer{
-	background-color: var(--secondaryColor);
+	background-color: var(--textcolor);
 	color: var(--textColor);
 }
 
