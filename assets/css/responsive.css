@@ -1,40 +1,29 @@
 /* Max width 767px */
 @media (max-width: 767px) {
-	i{
-		font-size: 24px;
-	}
-	.midle{
-		text-align: center;
-	}
-	p{
-		font-size: 8px;
-	}
-	nav>div{
-		clip-path: polygon(47% 0, 100% 31%, 100% 0);
-	}
+
 
 }
 
 /* Min width 576px to Max width 767px */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+	h1 {font-size:36px; line-height: 85px; font-weight: 700;}
+	h4 {font-size:16px; line-height: 48px; font-weight: 600;}
+	.head{
+		padding-top: 60px;
 
-
-
-	
+	}
 }
 
 /* Min width 768px to Max width 991px */
 @media (min-width: 768px) and (max-width: 991px) {
-	i{
-		font-size: 24px;
-	}
+
+
 
 
 }
 
 /* Min width 992px to Max width 1200px */
 @media (min-width: 992px) and (max-width: 1200px) {
-	
 	
 
 }
